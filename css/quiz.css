@@ -37,11 +37,11 @@ padding:2px;
 padding-left:10px;
 border: 2px solid white;
 cursor:pointer;
-background-color:#f0e68c;
+background-color:#ffcd55;
 }
 
 .option:hover{
-background-color:#2CB091;
+background-color:#104a57;
 /*border:#f0e68c solid 2px;
 color:#f0e68c;*/
 }

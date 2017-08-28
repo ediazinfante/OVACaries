@@ -7,6 +7,13 @@
            font-family: "Segoe UI",Arial,sans-serif;
 		   background-color: #f1f1f1;
        }
+	   
+	   h1,h2,h3,h4,h5,h6 {
+		   font-family: 'Amatic SC', cursive!important;
+		   font-weight: bold!important;
+		   color: #000000;
+	   }
+	   
 
         .material-icons {
             line-height:50px;
@@ -16,12 +23,21 @@
             padding-top:40px;
             line-height:1.5rem;
 			background-color: #f1f1f1;
-			font-family: "Segoe UI",Arial,sans-serif;
+			font-family: 'Josefin Sans', sans-serif;
         }
 
-		p { font-family: "Segoe UI",Arial,sans-serif;
+		ol,li,ul { font-family: 'Josefin Sans', sans-serif;
+			font-size:18px;
+		}
+		
+		p, ol,li,ul { font-family: 'Josefin Sans', sans-serif;
+			font-size:18px;
 		    text-align: justify;
 		}
+		
+		p.caption { font-family: "Segoe UI",Arial,sans-serif!important;
+					font-size:10px!important;
+					text-align:left!important;					}
 		
 		.row::after {
 			content: "";
@@ -33,24 +49,24 @@
 			box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 			margin-bottom:16px!important;
 			color:#000!important;background-color:#ffffff!important;
-			padding-bottom: 2px!important;
+			/*padding-bottom: 2px!important;*/
+			padding:0.01em 16px;
+			max-height:450px;overflow:auto;			
 		}	
 
 		.odo-card2 { /*w3-card-2 w3-margin-bottom w3-khaki"*/
 			box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 			margin-bottom:16px!important;
-			color:#000!important;background-color:#f0e68c!important;
+			color:#000!important;background-color:#fff!important;
 			padding-bottom: 2px!important;
 		}			
 		.odo-text-main{ /*w3-container w3-white" style="max-height:350px;overflow:auto;"*/
 			padding:0.01em 16px;
-			color:#000!important;background-color:#fff!important;
 			/*max-height:350px;overflow:auto;*/
 		}
 		.odo-text{ /*w3-container w3-white" style="max-height:350px;overflow:auto;"*/
 			padding:0.01em 16px;
-			color:#000!important;background-color:#fff!important;
-			max-height:350px;overflow:auto;
+			max-height:450px;overflow:auto;
 		}
 
 		.odo-note{ /*w3-container w3-margin-bottom w3-yellow  w3-round w3-border-left" style="margin:10%"*/
@@ -78,7 +94,7 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #009688; /* Set a background color */
+    background-color: #00e9b4; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -86,7 +102,7 @@
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #aaa; /* Add a dark-grey background on hover */
 }
 	
 /*----------- Modal Image --------*/
@@ -175,28 +191,6 @@
         width: 100%;
     }
 }
- 	
-/*-------------- LightBox -------------*/
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 33%;
-}
-
-.column4 {
-  float: left;
-  width: 25%;
-}
-
 
 /* The Modal (background) */
 .modal {
