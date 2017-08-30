@@ -1,0 +1,116 @@
+{"quizlist":[
+
+	{
+	"question":"1. Seleccione el código ICDAS, que a su juicio, corresponde a la imagen",
+	"option1":"Código 3",
+	"option2":"Código 1b",
+	"option3":"Código 2b",
+	"option4":"Código 4",
+	"type":2,
+	"photo":"img/pregunta1.png",
+	"justify":" ",
+	"nota":"Nota: Al colocar la sonda de la OMS perpendicularmente sobre la superficie oclusal del diente se confirma la presencia de cavidad en esmalte."
+	},
+	{	
+	"question":"2. Seleccione el código ICDAS, que a su juicio, corresponde a la imagen",
+	"option1":"Código 6",
+	"option2":"Código 5",
+	"option3":"Código 4",
+	"option4":"Código 0",
+	"type":2,
+	"photo":"img/pregunta2.png",
+	"justify":" ",
+	"nota":" "
+	},
+	{	
+	"question":"3. Seleccione el código ICDAS, que a su juicio, corresponde a la imagen",
+	"option1":"Código 2w",
+	"option2":"Código 2b",
+	"option3":"Código 1w",
+	"option4":"Código 0",
+	"type":2,
+	"photo":"img/pregunta3.png",
+	"justify":" ",
+	"nota":"Nota: Se observa en superficie vestibular de OD# 46 lesión de mancha blanca en húmedo."
+	},
+	{	
+	"question":"4. Seleccione el código ICDAS, que a su juicio, corresponde a la imagen",
+	"option1":"Código 4",
+	"option2":"Código 1b",
+	"option3":"Código 3",
+	"option4":"Código 2w",
+	"type":2,
+	"photo":"img/pregunta4.png",
+	"justify":" ",
+	"nota":" "
+	},
+	{	
+	"question":"5. Seleccione el código ICDAS, que a su juicio, corresponde a la imagen",
+	"option1":"Código 4",
+	"option2":"Código 1b",
+	"option3":"Código 2b",
+	"option4":"Código 3",
+	"type":2,
+	"photo":"img/pregunta5.png",
+	"justify":" ",
+	"nota":" "
+	},
+	{	
+	"question":"6. Seleccione de las siguientes opciones qué código corresponde a las siguientes características clínicas: cuando se ve en mojado no hay evidencia de cambio en el color de la superficie del diente, sólo se puede observar una mancha blanca, secando por 5 segundos.",
+	"option1":"Código 1w",
+	"option2":"Código 1b",
+	"option3":"Código 2w",
+	"option4":"Código 0",
+	"type":0,
+	"photo":" ",
+	"justify":" ",
+	"nota":" "
+	},
+	{		
+	"question":"7. La caries código 6 implica menos de la mitad de una superficie del diente y la 5 una extensa cavidad que implica al menos la mitad de una superficie del diente",
+	"option1":"Falso",
+	"option2":"Verdadero", 
+	"option3":" ",
+	"option4":" ",
+	"type":1,
+	"photo":" ",
+	"justify":"La caries código 5 implica menos de la mitad de una superficie del diente, y la caries código 6 implica al menos la mitad de la superficie del diente.",
+	"nota":" "
+	},
+	{
+	"question":"8. ¿Cuáles  de los siguientes factores NO están asociados a la etiología de la caries?",
+	"option1":"Peso, talla, raza, sexo",
+	"option2":"Microflora, los factores sociales, la dieta",
+	"option3":"Alimentación, hábitos de higiene oral, saliva",
+	"option4":"Tiempo y  dieta",
+	"type":0,
+	"photo":" ",
+	"justify":" ",
+	"nota":" "
+	},
+	{
+	"question":"9. ¿Cuál es la bacteria más frecuentemente involucrada en las lesiones cariosas?",
+	"option1":"Streptococcus mutans",
+	"option2":"Staphylococcus aureus",
+	"option3":"Prevotella oralis",
+	"option4":"Actinomyces odontolyticus",
+	"type":0,
+	"photo":" ",
+	"justify":" ",
+	"nota":" "
+	},
+	{
+	"question":"10. El ácido láctico en grandes concentraciones induce la desmineralización, pues conduce a la disminución del pH del medio.",
+	"option1":"Verdadero",
+	"option2":"Falso",
+	"option3":" ",
+	"option4":" ",
+	"type":1,
+	"photo":" ",
+	"justify":" ",
+	"nota":" "
+	}
+]
+}	
+	
+	
