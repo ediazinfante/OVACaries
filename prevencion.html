@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main">
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <!------------------------------------------------------------------->
+			<div class="w3-row" style="margin-bottom:10px">
+				<h1>Métodos de Prevención</h1>
+			</div>
+			<div class="odo-card1 w3-round-xlarge">
+				<p>El tratamiento preventivo de la caries dental, tiene como objetivo general reducir la incidencia, prevalencia y gravedad de la caries dental. Los objetivos específicos son: identificar los riesgos, controlar los riesgos y disminuir la pérdida dentaria. Entre los productos, sustancias o medicamentos de acción preventiva a la caries dental se encuentran:</p>
+				<ol>
+					<li><b>Flúor</b><br>
+					Es un mineral electronegativo, aumenta la resistencia del esmalte e inhibe el proceso de caries por disminución de la producción de ácido de los microorganismos fermentadores, reducción de la tasa de disolución ácida, reducción de la desmineralización e incremento de la remineralización.</li><br>
+					<li><b>Flúor sistémico</b><br>
+					La acción del flúor sistémico consiste en mejorar la resistencia del tejido dentario ante el ataque ácido y cambiar la morfología dentaria haciéndola menos susceptible a caries.<br>
+					El flúor ha sido añadido a varias soluciones y productos para su uso sistémico, y ha sido la fluoración del agua y la sal de cocina, los que han logrado mayores reducciones de caries.</li><br>
+					<li><b>Clorhexidina</b><br>
+					Es un antimicrobiano catiónico de amplio espectro. Su acción está dada por la reducción de la formación de la película adquirida y reducción de la adhesión microbiana a la superficie dental, ya que previene la transmisión de microorganismos cariogénicos.</li><br>
+					<li><b>Xylitol</b><br>
+					Es un polialcohol, poco metabolizado por los microorganismos bucales. Su acción consiste en inhibir la desmineralización, media la remineralización, estimula el flujo gingival, disminuye los efectos del Estreptococo mutans y estabiliza la caries rampante.</li><br>
+					<li><b>Sellantes de fosas y fisuras</b><br>
+					Existen 2 tipos, los compuestos por bisphenol glicidil metacrilato (Bis-GMA) y los compuestos por ionómeros de vidrio. Su actuación consiste en sellar las fosas y fisuras para evitar o prevenir la caries.</li>
+				</ol>
+			</div>
+			<div class="w3-row" style="margin-bottom:10px">
+				<h1>Cepillado dental</h1>
+			</div>			
+			<div class="odo-card1 w3-round-xlarge">
+				<p>El cepillado habitual y meticuloso de las superficies dentarias es necesario para la prevención de la caries y las enfermedades periodontales en la mayoría de los individuos. u finalidad es la eliminación de la placa bacteriana adherida a la superficie de los dientes, de los residuos alimentarios de la dieta y de las tinciones. Con un cepillado dental adecuado se consigue el control de la placa supragingival y de la placa sublingual situada hasta cierta profundidad.  En niños la técnica horizontal por ser más fácil, aunque es conveniente que los padres realicen el cepillado a los niños al menos una vez al día, al carecer estos de la destreza manual necesaria. En un adulto la técnica de Bass está diseñada para conseguir la higiene del surco dental, aunque es mejor combinar algunas de ellas, para obtener una higiene completa. Dentro de las técnicas de cepillado encontramos la técnica circular o rotacional, la técnica de Bass, la técnica de Charter, y la técnica de Stillman.</p>
+			</div>
+			<div class="w3-row w3-center" style="margin-bottom:40px">
+				<img src="img/prevencion.jpg" style="width:100%;" alt="Tomado de: http://cepilladotec.blogspot.com.co/2014/09/tecnicas-de-cepillado.html" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				<!-- div class="w3-text-grey w3-tiny" style="width:80%;height:auto;font-style:italic">Tomado de: http://cepilladotec.blogspot.com.co/2014/09/tecnicas-de-cepillado.html</div -->
+			</div>
+			<!------------------------------------------------------------------->
+        </div>
+    </div>
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>
+	
+		
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>

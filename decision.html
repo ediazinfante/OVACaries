@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main">
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <!------------------------------------------------------------------->
+			<div class="w3-row" style="margin-bottom:10px">
+				<h1>Toma de Decisión - Tratamientos</h1>
+			</div>
+			<div class="w3-row">
+				<div class="w3-col w3-half w3-center w3-panel">
+					<img src="img/decision1.png" style="width:100%;" alt="Tomado de: Guia clínica caries dental, sistema de calidad en salud, Facultad de Odontología, Universidad Nacional de Colombia. 2006." class="hover-shadow w3-round-xlarge myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				</div>
+				<div class="w3-col w3-half odo-card1 w3-round-xlarge" style="margin-top:20px">
+					<p>
+					Para la toma de decisión, manejo y tratamiento en las distintas fases de la caries, se crea la Guía ICCMS, el objetivo de esta guía es describir la estructura y facilitar la implementación del Sistema Internacional de Clasificación y Manejo de Caries (ICCMSTM), el cual es propuesto por los autores para usar en el manejo diario de pacientes para la prevención y manejo de caries. Esta propone la definición de las categorías combinadas de caries dependiendo de su severidad, así: Superficies sanas (código ICDAS 0), estadío inicial de caries (códigos ICDAS 1 y 2), estadío moderado de caries (códigos ICDAS 3 y 4), estadío severo de caries (códigos ICDAS 5 y 6).</p>
+
+					<p>Las recomendaciones de manejo para caries coronal en dentición permanente son las siguientes:</p>
+					<ol>
+					<li><b>Superficie sana:</b> Prevención basada en riesgo. Cepillado dental, topicación de fluor en barniz 2 veces al año en riesgo moderado o severo, o flúor en gel o solución. Citas de revisión cada 3 meses en riesgo moderado o severo, igual que modificación general en comportamiento en salud oral.</li>
+
+					<li><b>Estadío inicial activa:</b> Fosas y fisuras: manejo no operatorio (sellantes a base de resina o a base de ionómero de vidrio). Superficies interproximales: manejo no operatorio (sellantes a base de resina/ infiltrantes).</li>
+
+					<li><b>Estadío moderada activa:</b> manejo no operatorio (sellantes a base de resina) o manejo operatorio con preservación dental. En superficies interproximales determinar si existe cavitación para opciones de manejo apropiadas (se recomienda separación dental), si no hay cavitación manejo no operatorio, si hay cavitación manejo operatorio con preservación dental.</li>
+
+					<li><b>Estadío moderada detenida:</b> Ningún tratamiento o manejo operatorio con preservación dental si la lesión se convierte en una zona de retención.</li> 
+
+					<li><b>Estadío severa activa:</b> manejo operatorio con preservación dental.</li>
+
+					<li><b>Estadío severa detenida:</b> manejo operatorio con preservación dental si la lesión se convierte en una zona de retención de plaza o si es estéticamente inaceptable.</li>
+
+				</div>
+			</div>
+			
+			<!------------------------------------------------------------------->
+        </div>
+    </div>
+	
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>	
+	
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>

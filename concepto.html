@@ -26,17 +26,25 @@
         <div class="w3-container w3-margin-top">
             <!------------------------------------------------------------------->
 			<h1>¿Qué es la caries?</h1>
+			<audio controls autoplay>
+                  <source src="audios/concepto.wav" type="audio/wav">
+            </audio>
+			<!--- audio --->
 			<div class="w3-row" style="">
-				<div class="w3-col w3-half odo-card1 w3-round-xlarge" style="margin-top:20px">
-					<p>
-					Fejerskov define la lesión cariosa como un mecanismo dinámico de desmineralización y remineralización como resultado del metabolismo microbiano agregado sobre la superficie dentaria, en la cual con el tiempo, puede resultar una pérdida neta de mineral y es posible que posteriormente se forme una cavidad. La caries dental es una enfermedad de origen multifactorial en la que existe interacción de tres factores principales: el huésped (higiene bucal, la saliva y los dientes), la microflora (infecciones bacterianas) y el sustrato (dieta cariogénica). Además de estos factores, deberá tenerse en cuenta uno más, el tiempo. Para que se forme una caries es necesario que las condiciones de cada factor sean favorables; es decir, un huésped susceptible, una flora oral cariogénica y un sustrato apropiado que deberá estar presente durante un período determinado de tiempo.</p>
+				<div class="w3-col w3-half" style="margin-top:20px">
+					<div class="odo-card1 w3-round-xlarge">
+						<p>Fejerskov define la lesión cariosa como un mecanismo dinámico de desmineralización y remineralización como resultado del metabolismo microbiano agregado sobre la superficie dentaria, en la cual con el tiempo, puede resultar una pérdida neta de mineral y es posible que posteriormente se forme una cavidad. La caries dental es una enfermedad de origen multifactorial en la que existe interacción de tres factores principales: el huésped (higiene bucal, la saliva y los dientes), la microflora (infecciones bacterianas) y el sustrato (dieta cariogénica). Además de estos factores, deberá tenerse en cuenta uno más, el tiempo. Para que se forme una caries es necesario que las condiciones de cada factor sean favorables; es decir, un huésped susceptible, una flora oral cariogénica y un sustrato apropiado que deberá estar presente durante un período determinado de tiempo.</p>
+					</div>
+					<div class="w3-center">.
+						<img class="w3-round" src="img/concepto2.png" style="width:65%">
+					</div>
 				</div>
 				<div class="w3-col w3-half w3-center w3-panel">
-					<img src="img/concepto1.png" style="width:100%;" alt="" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+					<img src="img/concepto1.png" style="width:100%;" alt="Tomado de: Dental caries: the disease and its clinical management. Ole Fejerskov, Edwina A.M. Kidd, Bente Nyvad, Vibeke Baelum. -- 2nd ed. 2003." class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
 				</div>
 			</div>
 			<div class="w3-container w3-center w3-margin" style="">
-				<img class="w3-round" src="img/concepto2.png" style="width=300px">
+				
 			</div>
 
 			<!------------------------------------------------------------------->
@@ -47,7 +55,7 @@
 	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
 		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 		<img id="imgModal" class="modal-content" style="width:80%">
-		<div id="caption" class="w3-text-white w3-small"></div>
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
 	</div>
 	
 	

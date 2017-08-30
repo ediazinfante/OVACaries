@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main" >
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <!------------------------------------------------------------------->
+			<h1>Caries en Dentina</h1>
+			<div class="w3-row" style="">
+				<div class="w3-col w3-half odo-card1 w3-round-xlarge" style="margin-top:20px">
+					<p>
+					Un corte transversal no descalcificado de un diente con una lesión avanzada por caries de la dentina que no haya alcanzado la pulpa mostrará cinco zonas microscópicas que revelan las etapas de la caries de la dentina que termina produciendo una cavidad.</p>
+					<ul>
+						<li><strong>Degeneración grasa</strong>: refleja los más precoces cambios asociados a la infección por caries, donde las enzimas bacterianas han avanzado por delante de las bacterias en los túbulos de dentina.</li>
+
+						<li><strong>Zona transparente</strong>: es un banda de dentina hipermineralizada en la cual los túbulos de dentina están esclerosados debido a nuevo depósito de sales calcificadoras liberadas de la zona desmineralizada.</li>
+
+						<li><strong>Zona de desmineralización</strong>: está formada por dentina más blanda que la normal debido a la acción inicial de las enzimas bacterianas.</li>
+
+						<li><strong>Zona de coloración parda</strong>: se debe a la reducción del contenido mineral y a la presencia de túbulos de dentina distendidos rellenos de bacterias. Esta zona suele ser lo bastante blanda como para ser eliminada con un instrumento manual.</li>
+						
+						<li><strong>Zona de cavitación</strong>: se produce porque no queda mineralización y el componente orgánico es disuelto parcialmente por las bacterias. Esta es la base clínica de la cavidad que se descama fácilmente en capas a lo largo de las líneas sucesivas de crecimiento.</li>
+						
+					</ul>
+				</div>
+				<div class="w3-col w3-half w3-center w3-panel">
+					<img src="img/dentina1.png" style="width:100%;" alt="Tomado de: Patología Oral y Maxilofacial Contemporanea, J. Philip Sapp, Lewis R. Eversole, George P. Wysocki. 2da Edición. pág. 66." class="hover-shadow w3-round-xlarge myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				</div>
+			</div>
+
+
+			<!------------------------------------------------------------------->
+        </div>
+    </div>
+	
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>
+	
+	
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>

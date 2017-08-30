@@ -16,32 +16,39 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For IE and Firefox
 } 
 
-/*----------- Modal Image --------*/
-/*
-// Get the modal
-var modal = document.getElementById('myModal');
+//----------- Tab Page Transition -----------
+function openTab(tabName, btnName, audNum) {
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+		var i;
+		var x = document.getElementsByClassName("myTabs");	
+		var y = document.getElementsByClassName("w3-bar-item w3-button myPage");
+		var z = document.getElementsByClassName("myAudio");
+	
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		for (i = 0; i < y.length; i++) {
+			y[i].style.backgroundColor = "black";
+		}
+		for (i = 0; i < z.length; i++) {
+			z[i].pause();
+			z[i].currentTime = 0;
+		}
+		
+		document.getElementById(tabName).style.display = "block";
+		document.getElementById(btnName).style.backgroundColor = "#00e9b4";
+		
+		z[audNum].play();
+		
 }
-img = document.getElementById('myImg2');
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}*/
+//------------  Open Acordion --------------
+function openAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}	
 

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main">
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+			<div class="w3-row" style="margin-bottom:10px">
+				<h1>¿Qué es ICDAS?</h1>
+			</div>
+			<div class="w3-row">
+				<p>ICDAS (International Caries Detection and Assessment System) es un sistema internacional de detección y diagnóstico de caries, consensuado en Baltimore, Maryland, USA en el año 2005, para la práctica clínica, la investigación y el desarrollo de programas de salud pública. El objetivo era desarrollar un método visual para la detección de la caries, en fase tan temprana como fuera posible, y que además detectara la gravedad y el nivel de actividad de la misma.</p>
+			</div>
+			<div class="w3-row">
+				<div class="w3-col w3-half">
+					<div class="w3-bar w3-large w3-black">  
+						  <button id="bt0" class="w3-bar-item w3-button myPage" style="background-color:#00e9b4;" onclick="openTab('mb0','bt0','a0')">0</button>
+						  <button id="bt1" class="w3-bar-item w3-button myPage" onclick="openTab('mb1','bt1',1)">1</button>
+						  <button id="bt2" class="w3-bar-item w3-button myPage" onclick="openTab('mb2','bt2',2)">2</button>
+						  <button id="bt3" class="w3-bar-item w3-button myPage" onclick="openTab('mb3','bt3',3)">3</button>
+						  <button id="bt4" class="w3-bar-item w3-button myPage" onclick="openTab('mb4','bt4',4)">4</button>
+						  <button id="bt5" class="w3-bar-item w3-button myPage" onclick="openTab('mb5','bt5',5)">5</button>
+						  <button id="bt6" class="w3-bar-item w3-button myPage" onclick="openTab('mb6','bt6',6)">6</button>
+					</div>
+				</div>
+			</div> 	
+			
+			<div id="mb0" class="myTabs">				
+				<div class="w3-row">
+					<div class="w3-col w3-half">				
+						<div class="w3-card-4 w3-margin-top">
+							<header class="w3-container" style="background-color:#6969aa"><h2>Código 0</h2></header>
+							<div class="w3-container w3-white">
+								<audio id="a0" class="myAudio" controls autoplay>
+									<source src="audios/codigo0.mp3" type="audio/mp3">
+								</audio>
+								<p><strong>Fosas y fisuras</strong></p>
+								<p>Se considera código 0 a las superficies con defectos de desarrollo, tales como hipoplasia del esmalte, fluorosis, desgaste de los dientes (desgaste, abrasión y erosión), manchas intrínsecas y extrínsecas, o múltiples fisuras manchadas.</p>
+								<p><strong>Superficie lisa (mesial y distal)</strong></p>
+								<p>No debe haber evidencia de caries (ya sea con o sin el cambio cuestionable en la translucidez del esmalte después de prolongado el secado).</p>
+								<p><strong>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal (sin dientes adyacentes):</strong></p>
+								<p>No debe haber evidencia de caries (sin cambio cuestionable en la translucidez del esmalte después del secado).</p>
+							</div>
+						</div>
+					</div>
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+						<!--
+							<img src="img/codigo0.png" style="width:80%;" alt="Tomado de: Dennis Kunkel Microscopy. http://education.denniskunkel.com/catalog/product_info.php?products_id=9571" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Tomado de: Dennis Kunkel Microscopy. http://education.denniskunkel.com/catalog/product_info.php?products_id=9571</p></div>
+						-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mb1" class="myTabs" style="display:none">				
+				<div class="w3-row">
+					<div class="w3-col w3-half">				
+						<div class="w3-card-4 w3-margin-top">
+							<header class="w3-container" style="background-color:#4e8eb1"><h2>Código 1</h2></header>
+							<div class="w3-container w3-white">
+								<audio id="a1" class="myAudio" controls>
+									<source src="audios/codigo1.mp3" type="audio/mpeg">
+								</audio>
+								<p><strong>Fosas y fisuras:</strong></p>
+								<p>Cuando se ve mojado no hay evidencia de cambio en el color por caries, pero después de secado prologando por 5 segundos, se observa una opacidad o decoloración (lesión blanca o marrón) que no es coherente con el aspecto clínico de un esmalte sano. Este cambio de color está limitado a los confines de la fosa y el área de fisura (si se ve húmedo o seco).</p>
+								<p><strong>Superficie lisa (mesial y distal):</strong></p>
+								<p>Cuando se ve mojada no hay evidencia de cualquier cambio en el color de la superficie atribuible a la actividad de caries lesión blanca.</p>
+								<p><strong>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal (sin dientes adyacentes):</strong></p>
+								<p>Cuando se ve mojada no hay evidencia de cualquier cambio en el color atribuible a la actividad de caries.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo1a.png" style="width:80%;" alt="Cortesía del Dr. Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr. Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo1b.png" style="width:80%;" alt="Cortesía del Dr. Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr. Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div id="mb2" class="myTabs" style="display:none">
+				<div class="w3-row">
+					<div class="w3-col w3-half">
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#34b3b9"><h2>Código 2</h2></header>
+						
+							<div class="w3-container w3-white">
+								<audio id="a2" class="myAudio" controls>
+								  <source src="audios/codigo2.mp3" type="audio/mp3">
+							    </audio>	
+								<p><strong>Fosas y fisuras:</strong></p>
+								<p>Cuando el diente está mojado hay una  opacidad o decoloración (lesión blanca o marrón). La grieta / fosa no es consistente con la apariencia clínica de esmalte sano. La lesión aún debe ser visible cuando se seca.</p>
+								<p><strong>Superficie lisa (mesial y distal):</strong></p>
+								<p>Cuando se ve desde la dirección oclusal, esta opacidad puede ser vista como una sombra confinada al esmalte, visto a través de la cresta marginal.</p>
+								<p><strong>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal sin dientes adyacentes):</strong></p>
+								<p>La lesión se localiza en las caras proximales (en contacto o dentro de 1 mm) del margen gingival.</p>
+							</div>
+						</div>
+					</div>
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo2a.png" style="width:80%;" alt="Tomado de: ICDAS: International Caries Detection and Assessment System. https://www.icdas.org/courses/spanish/course/nav.html" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Tomado de: ICDAS: International Caries Detection and Assessment System. https://www.icdas.org/courses/spanish/course/nav.html</p></div>
+						</div>
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo2b.png" style="width:80%;" alt="Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div id="mb3" class="myTabs" style="display:none">
+				<div class="w3-row">
+					<div class="w3-col w3-half">
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#1ad8c0"><h2>Código 3</h2></header>
+						
+							<div class="w3-container w3-white">
+							<audio id="a3" class="myAudio" controls>
+								<source src="audios/codigo3.mp3" type="audio/mp3">
+							</audio>								
+								<p><strong>Fosas y fisuras:</strong></p><p>El diente mojado puede tener una opacidad de caries blanca/ marrón, que no es consistente con la aparicencia clínica de esmalte sano, una vez que se secó, se observa una pérdida de la estructura dental cariada dentro de la fosa o fisura, o en superficie lisa.</p>
+								<p>En caso de duda, o para confirmar la evaluación visual, la sonda de la OMS / IPC / PSR se puede utilizar suavemente a través de una superficie del diente para confirmar la presencia de una cavidad aparentemente confinada al esmalte.</p>
+								<p><b>Superficie lisa (mesial y distal):</b></p><p>Una vez que se secó, se observa una pérdida de la integridad del esmalte, visto desde la dirección vestibular o lingual.</p>
+								<p><b>Superficie libre (vestibular y lingual y el examen directo de las superficies mesial y distal sin dientes adyacentes):</b></p><p>Una vez seco se produce una pérdida de integridad de la superficie cariada sin dentina visible.
+								</p>
+							</div>
+						</div>
+					</div>				
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo3a.png" style="width:80%;" alt="Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo3b.png" style="width:80%;" alt="" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption"></p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mb4" class="myTabs" style="display:none">
+				<div class="w3-row">
+					<div class="w3-col w3-half">
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#00fdc8"><h2>Código 4</h2></header>
+							<div class="w3-container w3-white">
+							<audio id="a4" class="myAudio" controls>
+								<source src="audios/codigo4.mp3" type="audio/mp3">
+							</audio>														
+								<p><b>Fosas y fisuras:</b></p>
+								<p>Aparece como una sombra de dentina decolorada visible a través de una superficie de esmalte aparentemente intacta que puede o no puede mostrar signos de colapso localizado (pérdida de la continuidad). Se ve a menudo más fácilmente cuando el diente está mojado. La zona oscura es una sombra intrínseca que puede aparecer como gris, azul o marrón en color.</p>
+								<p><b>Superficie lisa ( mesial y distal):</b></p>
+								<p>Esta lesión aparece como una sombra de la dentina decolorada visible a través de una cresta marginal, aparentemente intacto, paredes bucales o linguales de esmalte.</p>
+								<p><b>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal (sin dientes adyacentes):</b>
+								Esta lesión aparece como una sombra de la dentina descolorida visible a través de la superficie del esmalte más allá del blanco o marrón. Lesión de mancha, que puede o no puede mostrar signos de ruptura localizada.
+								</p>
+							</div>
+						</div>
+					</div>					
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo4.png" style="width:80%;" alt="Tomado de: ICDAS: International Caries Detection and Assessment System.  https://www.icdas.org/courses/spanish/course/nav.html" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Tomado de: ICDAS: International Caries Detection and Assessment System.  https://www.icdas.org/courses/spanish/course/nav.html</p></div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div id="mb5" class="myTabs" style="display:none">
+				<div class="w3-row">
+					<div class="w3-col w3-half">
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#fdc800"><h2>Código 5</h2></header>							
+							<div class="w3-container w3-white">
+							<audio id="a5" class="myAudio" controls>
+								<source src="audios/codigo5.mp3" type="audio/mp3">
+							</audio>							
+								<p><b>Fosas y fisuras:</b></p><p>Existe cavitación en esmalte opaco o descolorido con exposición de la dentina debajo.
+								El diente mojado se ve que puede tener oscurecimiento de la dentina, que visible a través del esmalte. Consiste en una extensa cavidad que implica menos de la mitad de una superficie del diente.</p>
+								<p><b>Superficie lisa (mesial y distal):</b></p><p>La cavitación en esmalte opaco o decolorido (blanco o marrón), con la dentina expuesta a juicio del examinador. No se debe usar sonda</p>
+								<p><b>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal (sin dientes adyacentes):</b></p><p>La cavitación en esmalte opaco o descolorido la exposición de la dentina debajo</p>
+							</div>
+						</div>
+					</div>					
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo5.png" style="width:80%;" alt="Cortesía de Dr. Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía de Dr. Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div id="mb6" class="myTabs" style="display:none">
+				<div class="w3-row">
+					<div class="w3-col w3-half">
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#e2647e"><h2>Código 6</h2></header>						
+							<div class="w3-container w3-white">
+							<audio id="a6" class="myAudio" controls>
+								<source src="audios/codigo6.mp3" type="audio/mp3">
+							</audio>								
+								<p><b>Fosas y fisuras:</b></p><p>Evidente pérdida de estructura dental, la cavidad es profunda y amplia y la dentina es claramente visible en las paredes y en la base. Consiste en una extensa cavidad que implica al menos la mitad de una superficie del diente o, posiblemente, llegar a la pulpa.</p>
+								<p><b>Superficie libre (mesial y distal):</b></p><p>Evidente pérdida de estructura dental, la extensa cavidad puede ser profunda o amplia y la dentina es claramente visible tanto en las paredes y en la base. El reborde marginal puede o no puede estar presente. Una extensa cavidad implica al menos la mitad de una superficie del diente o, posiblemente, llegar a la pulpa.</p>
+								<p><b>Superficie lisa libre (vestibular y lingual y el examen directo de las superficies mesial y distal (sin dientes adyacentes):</b></p><p>Evidente pérdida de estructura dental, la cavidad es profunda y amplia y la dentina es claramente visible en las paredes y en la base. Una extensa cavidad implica al menos la mitad de una superficie del diente o, posiblemente, llegar a la pulpa.</p>
+							</div>
+						</div>
+					</div>					
+					<div class="w3-col w3-half">
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo6a.png" style="width:80%;" alt="Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>
+						<div class="w3-col w3-center w3-panel">
+							<img src="img/codigo6b.png" style="width:80%;" alt="Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena" class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+							<div class="w3-tiny"><p class="caption">Cortesía del Dr Luis Eduardo Carmona, Universidad de Cartagena</p></div>
+						</div>						
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>
+
+
+
+	
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main" >
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <!------------------------------------------------------------------->
+			<h1>Caries en Esmalte</h1>
+			<audio controls>
+				<source src="audios/esmalte.wav" type="audio/wav">
+			</audio>			
+			<div class="w3-row" style="">
+				<div class="w3-col w3-half odo-card1 w3-round-xlarge" style="margin-top:20px">
+					<p>
+					Cuando se observa al microscopio un corte basal delgado de una lesión precoz de caries (previa a la cavitación), pueden identificarse cuatro zonas:</p>
+					<ul>
+						<li><strong>Zona superficial relativamente intacta</strong>: esta zona permanece inalterable en relación al resto de las zonas, actúa como gradiente de difusión que permite que minerales como el calcio, el fosfato y el fluoruro entren y salgan del esmalte.</li>
+
+						<li><strong>Cuerpo de la lesión</strong>: es la zona más amplia de toda la lesión inicial, donde se produce la principal desmineralización. Además, existe un incremento en la cantidad de materia orgánica y agua, debido a la entrada de bacterias y saliva.</li>
+
+						<li><strong>Zona oscura</strong>: es aquella que se encuentra presente en el 90 al 95% de las lesiones. Esta zona es consecuencia del proceso de desmineralización y remineralización. Se observa oscura, debido a que al ser la quinolina incapaz de penetrar dentro de los poros muy pequeños que están en esta zona no transmite la luz polarizada.</li>
+
+						<li><strong>Zona translucida</strong>: es el frente de avance de la lesión del esmalte. Su apariencia translucida se basa en el hecho que la quinolina penetra fácilmente en los poros aumentados por la pérdida mineral y como la quinolina tiene el mismo índice de refracción de los cristales, el resultado será una zona menos estructurada y de apariencia translucida.</li>
+					</ul>
+				</div>
+				<div class="w3-col w3-half w3-center w3-panel">
+					<img src="img/esmalte1.png" style="width:100%;" alt="Tomado de: Patología oral y Maxilofacial Contemporanea. J. Philip Sapp, George P. Wysocki, Lewis R Eversole. 2da edición. pág. 66." class="hover-shadow w3-round-xlarge myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				</div>
+			</div>
+
+
+			<!------------------------------------------------------------------->
+        </div>
+    </div>
+	
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>
+	
+	
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>

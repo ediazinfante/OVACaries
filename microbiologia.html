@@ -24,30 +24,34 @@
             </div>
         </div>
         <div class="w3-container w3-margin-top">
-            <!------------------------------------------------------------------->
 			<div class="w3-row" style="margin-bottom:10px">
 				<h1>Microbiología</h1>
+				<audio controls autoplay>
+                  <source src="audios/microbiologia.wav" type="audio/wav">
+            </audio>
 			</div>
-			<div class=" w3-round-xlarge">
+			<div class="w3-row">
 				<p>El paso más importante para que se produzca la caries, es la adhesión inicial de la bacteria a la superficie del diente. Esta adhesión está mediada por la interacción entre una proteína del microorganismo y algunas de la saliva que son adsorbidas por el esmalte dental.
-				Para la colonización bacteriana, es imprescindible la formación previa de una fina película de proteínas salivales sobre la superficie del diente: la película adquirida. La interacción se produce en cierta medida a través de cargas electrostáticas. Las bacterias orales (alrededor de 500 especies) no forman colonias solitarias, sino que pertenecen a una comunidad compleja de numerosas especies, que constituyen una masa de células unidad por una matriz pegajosa de glucosa. Entre los microorganissmos que han sido involucrados con esta patología se cuentan los estreptococos del grupo mutans, <i>Lactobacillus spp, y</i><i>Actinomyces spp.</i></p>
+				Para la colonización bacteriana, es imprescindible la formación previa de una fina película de proteínas salivales sobre la superficie del diente: la película adquirida. La interacción se produce en cierta medida a través de cargas electrostáticas. Las bacterias orales (alrededor de 500 especies) no forman colonias solitarias, sino que pertenecen a una comunidad compleja de numerosas especies, que constituyen una masa de células unidad por una matríz pegajosa de glucosa. Entre los microorganismos que han sido involucrados con esta patología se cuentan los estreptococos del grupo mutans, <i>Lactobacillus spp, y</i><i>Actinomyces spp.</i></p>
 			</div>
-			 <div class="w3-bar w3-large">
-			  <a href="#" class="w3-button">&laquo;</a>
-			  <button id="bt1" class="w3-button myPage" style="background-color:#00ff00;" onclick="openTab('mb1','bt1')">1</button>
-			  <button id="bt2" class="w3-button myPage" onclick="alert('prev');openTab('mb2','bt2');alert('after');">2</button>
-			  <button id="bt3" class="w3-button myPage" onclick="openTab('mb3','bt3')">3</button>
-			  <button id="bt4" class="w3-button myPage" onclick="openTab('mb4','bt4')">4</button>
-			  <a href="#" class="w3-button">&raquo;</a>
-			</div> 
-			<div id="mb1" class="myTabs">
-				
+			<div class="w3-row">
+				<div class="w3-col w3-half">
+					<div class="w3-bar w3-large w3-black">  
+						  <button id="bt1" class="w3-bar-item w3-button myPage" style="background-color:#00e9b4;" onclick="openTab('mb1','bt1')">1</button>
+						  <button id="bt2" class="w3-bar-item w3-button myPage" onclick="openTab('mb2','bt2')">2</button>
+						  <button id="bt3" class="w3-bar-item w3-button myPage" onclick="openTab('mb3','bt3')">3</button>
+						  <button id="bt4" class="w3-bar-item w3-button myPage" onclick="openTab('mb4','bt4')">4</button>
+					</div>
+				</div>
+			</div> 	
+			
+			<div id="mb1" class="myTabs">				
 				<div class="w3-row">
-					<div class="w3-col w3-half">
-						<div class="w3-card-4"">
-							<header class="w3-container w3-color3"><h2>Streptococcus mutans</h2></header>
-							<div class="w3-container">
-								<p>Son cocos gram positivos, aerobios, aunque también pueden desarrollarse en condiciones de anaerobiosis. No poseen catalasa. Presentan metabolismo fermentativo y producen especialmente ácido láctico. Es considerada la especie más frecuentemente involucrada en las lesiones cariosas. La adhesión de este microorganismo esta mediada por la interaccion entre una proteína PAc y alginas de la saliva que son absorbidas por el esmalte dental; la capacidad de acumulación en la placa ocurre cuando S. mutans prodce glucanos solubles e insolubles utilizando las enzimas glucosiltransferasas a partir de los azucares de la diente.  Entre los factores de patogenicidad presentes en Streptococcus mutans, se destacan:</p>
+					<div class="w3-col w3-half">				
+						<div class="w3-card-4 w3-margin-top">
+							<header class="w3-container" style="background-color:#6969aa"><h2>Streptococcus mutans</h2></header>
+							<div class="w3-container w3-white">
+								<p>Son cocos gram positivos, aerobios, aunque también pueden desarrollarse en condiciones de anaerobiosis. No poseen catalasa. Presentan metabolismo fermentativo y producen especialmente ácido láctico. Es considerada la especie más frecuentemente involucrada en las lesiones cariosas. La adhesión de este microorganismo esta mediada por la interaccion entre una proteína PAc y alginas de la saliva que son absorbidas por el esmalte dental; la capacidad de acumulación en la placa ocurre cuando S. mutans prodce glucanos solubles e insolubles utilizando las enzimas glucosiltransferasas a partir de los azúcares de la diente.  Entre los factores de patogenicidad presentes en Streptococcus mutans, se destacan:</p>
 								<ol style="list-style-type: lower-alpha;">
 									<li>poder acidógeno, acidófilo y acidúrico,</li>
 									<li>síntesis de polisacáridos extracelulares de tipo glucanos insolubles y solubles, y fructanos,</li>
@@ -69,12 +73,13 @@
 				</div>
 			</div>
 			<div id="mb2" class="myTabs" style="display:none">
-				<h2 class="w3-color4">Lactobacillus spp</h2>
 				<div class="w3-row">
 					<div class="w3-col w3-half">
-						<div class="odo-card1 w3-margin-top">
-							<p>Son bacilos Gram-positivos, anaerobios facultativos, acidógenos y acidúricos, pH cercanos a 5 favorecen su crecimiento, así como el inicio de su actividad proteolítica. Algunas cepas sintetizan polisacáridos intra y extracelulares a partir de la sacarosa, pero se adhieren muy poco a superficies lisas, por lo que deben utilizar otros mecanismos para colonizar las superficies dentarias. Entre estos mecanismos podemos mencionar la unión física por atrapamiento en superficies retentivas, tales como: fosas y fisuras oclusales o caries cavitada, coagregación con otras especies bacterianas, constituyendo la biopelícula dental. Entre las especies de Lactobacillus aisladas en lesiones de caries dentinaria se distinguen: L.casei, L.paracasei, L.rhamnosus, L.gasseri, L.ultunensis. L.salivarius, L.crispatus, L.fermentum, L.panis, L.nagelli L.delbrueckii y L.gallinarum.</p>
-
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container w3-color2"><h2>Lactobacillus spp</h2></header>
+							<div class="w3-container w3-white">
+								<p>Son bacilos Gram-positivos, anaerobios facultativos, acidógenos y acidúricos, pH cercanos a 5 favorecen su crecimiento, así como el inicio de su actividad proteolítica. Algunas cepas sintetizan polisacáridos intra y extracelulares a partir de la sacarosa, pero se adhieren muy poco a superficies lisas, por lo que deben utilizar otros mecanismos para colonizar las superficies dentarias. Entre estos mecanismos podemos mencionar la unión física por atrapamiento en superficies retentivas, tales como: fosas y fisuras oclusales o caries cavitada, coagregación con otras especies bacterianas, constituyendo la biopelícula dental. Entre las especies de Lactobacillus aisladas en lesiones de caries dentinaria se distinguen: L.casei, L.paracasei, L.rhamnosus, L.gasseri, L.ultunensis. L.salivarius, L.crispatus, L.fermentum, L.panis, L.nagelli L.delbrueckii y L.gallinarum.</p>
+							</div>
 						</div>
 					</div>
 					<div class="w3-col w3-half">
@@ -86,13 +91,15 @@
 				</div>
 			</div>
 			<div id="mb3" class="myTabs" style="display:none">
-				<h2 class="w3-color4">Actinomyces spp</h2>
 				<div class="w3-row">
 					<div class="w3-col w3-half">
-						<div class="odo-card1 w3-margin-top">
-							<p>Son bacilos filamentosos Gram positivos, anaerobios y heterofermentativos. Son inmóviles y su tamaño varía entre 1 y 4 m aproximadamente. Producen una mezcla de ácidos orgánicos, como productos finales, tales como: succínico, láctico o acético. Entre los factores que determinan su virulencia se considera la presencia de fimbrias, que contribuyen con fenómenos de adhesión, agregación y congregación y la producción de enzimas proteolíticas como la neuraminidasa, esta última es de gran importancia cuando las lesiones de caries progresan a dentina profunda. En cuanto a los estudios que hacen referencia a la presencia de Actinomyces en lesiones de caries radicular, se ha reportado la presencia de: Actinomyces <b>naeslundii</b>, Actinomyces eriksonii, Actinomyces israelii, Actinomyces <b>odontolyticus</b>, Actinomyces viscosus, Actinomyces georgiae y Actinomyces gerencseriae, pero su rol en el inicio y progresión de la lesión de caries no es concluyente.</p>
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container w3-color3"><h2>Actinomyces spp</h2></header>
+							<div class="w3-container w3-white">
+								<p>Son bacilos filamentosos Gram positivos, anaerobios y heterofermentativos. Son inmóviles y su tamaño varía entre 1 y 4 m aproximadamente. Producen una mezcla de ácidos orgánicos, como productos finales, tales como: succínico, láctico o acético. Entre los factores que determinan su virulencia se considera la presencia de fimbrias, que contribuyen con fenómenos de adhesión, agregación y congregación y la producción de enzimas proteolíticas como la neuraminidasa, esta última es de gran importancia cuando las lesiones de caries progresan a dentina profunda. En cuanto a los estudios que hacen referencia a la presencia de Actinomyces en lesiones de caries radicular, se ha reportado la presencia de: Actinomyces <b>naeslundii</b>, Actinomyces eriksonii, Actinomyces israelii, Actinomyces <b>odontolyticus</b>, Actinomyces viscosus, Actinomyces georgiae y Actinomyces gerencseriae, pero su rol en el inicio y progresión de la 	lesión de caries no es concluyente.</p>
+							</div>
 						</div>
-					</div>
+					</div>				
 					<div class="w3-col w3-half">
 						<div class="w3-col w3-center w3-panel">
 							<img src="img/microbiologia3.png" style="width:80%;" alt="Tomado de: Dennis Kunkel Microscopy: Science photo library. 2007." class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
@@ -102,13 +109,15 @@
 				</div>
 			</div>
 			<div id="mb4" class="myTabs" style="display:none">
-				<h2 class="w3-color4">Prevotella</h2>
 				<div class="w3-row">
 					<div class="w3-col w3-half">
-						<div class="odo-card1 w3-margin-top">
-							<p>Se trata de bacilos anaerobios estrictos, Gram-negativos, no esporulados, inmóviles, con marcada actividad proteolítica y de hemolisina. En 1990, algunas especies de Bacteroides fueron reclasificadas dando origen al Género Prevotella. Las especies más comunes encontrados en cavidad bucal son Prevotella melaninogénica, Prevotella oralis, Prevotella intermedia, Prevotella buccae, Prevotella nigrescens, Prevotella denticola y Prevotella loeschii. La presencia de Prevotella está asociada a enfermedad periodontal, e infecciones endodónticas, pero en el caso de caries dental no está claro el papel que juegan en la progresión de la lesión. De las especies de Prevotella aisladas cabe señalar la presencia de P.buccae en lesiones iniciales y de P.buccae, P.intermedia y P.denticola en lesiones avanzadas de caries.</p>
+					    <div class="w3-card-4 w3-margin-top">
+						    <header class="w3-container" style="background-color:#F07719"><h2>Prevotella</h2></header>
+							<div class="w3-container w3-white">
+								<p>Se trata de bacilos anaerobios estrictos, Gram-negativos, no esporulados, inmóviles, con marcada actividad proteolítica y de hemolisina. En 1990, algunas especies de Bacteroides fueron reclasificadas dando origen al Género Prevotella. Las especies más comunes encontrados en cavidad bucal son Prevotella melaninogénica, Prevotella oralis, Prevotella intermedia, Prevotella buccae, Prevotella nigrescens, Prevotella denticola y Prevotella loeschii. La presencia de Prevotella está asociada a enfermedad periodontal, e infecciones endodónticas, pero en el caso de caries dental no está claro el papel que juegan en la progresión de la lesión. De las especies de Prevotella aisladas cabe señalar la presencia de P.buccae en lesiones iniciales y de P.buccae, P.intermedia y P.denticola en lesiones avanzadas de caries.</p>
+							</div>
 						</div>
-					</div>
+					</div>					
 					<div class="w3-col w3-half">
 						<div class="w3-col w3-center w3-panel">
 							<img src="img/microbiologia4.png" style="width:80%;" alt="Tomado de: Dennis Kunkel Microscopy: Science photo library. 2007." class="hover-shadow myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
@@ -117,29 +126,19 @@
 					</div>
 				</div>
 			</div>			
-			<!------------------------------------------------------------------->
+
         </div>
     </div>
 	<!-- Modal image window ---->
 	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
 		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 		<img id="imgModal" class="modal-content" style="width:80%">
-		<div id="caption" class="w3-text-white w3-small"></div>
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
 	</div>
-	<script>		
-	function openTab(tabName,btnName) {
-		var i;
-		var x = document.getElementsByClassName("myTabs");	
-		var y = document.getElementsByClassName("myPage");
-		alert(y.length);
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-			y[i].style.background-color = "#888888";
-		}
-		document.getElementById(tabName).style.display = "block";
-		document.getElementById(btnName).style.background-color ="#00ff00";
-	}
-	</script>
+
+
+
+	
     <script>
         $(document).ready(function() {
             $('#mySidebar').load("html/nav.html");

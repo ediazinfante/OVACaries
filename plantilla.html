@@ -38,6 +38,14 @@
 			<!------------------------------------------------------------------->
         </div>
     </div>
+	
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>	
+	
     <script>
         $(document).ready(function() {
             $('#mySidebar').load("html/nav.html");

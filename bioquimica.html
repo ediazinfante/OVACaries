@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Aplicación para el aprendizaje sobre caries dental">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objeto virtual de aprendizaje basado en caries dental</title>
+    <link rel="stylesheet" href="css/Amatic.css">
+    <link rel="stylesheet" href="css/odonto.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/w3.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <script src="js/utilities.js" type="text/javascript"></script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Subir al inicio"><i class="fa fa-chevron-up"></i></button>
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar"> </div>
+    <div class="w3-main" id="main">
+        <div class="w3-color1">
+            <div id="mbar" class="w3-container">
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <!------------------------------------------------------------------->
+			<div class="w3-row" style="margin-bottom:10px">
+				<h1>Bioquímica</h1>
+				<audio controls autoplay>
+                  <source src="audios/bioquimica.mp3" type="audio/mp3">
+				</audio>
+			</div>
+			<div class="w3-row">
+				<p>
+				Es necesario analizar las propiedades de la saliva y la resistencia del diente a la acción bacteriana.
+				</p>
+			</div>
+			<div class="w3-card-4 w3-margin-top">
+				<header class="w3-container" style="background-color:#6969aa" onclick="openAccordion('ac1')"><h2 class="w3-text-white">Saliva</h2></header>
+				<div id='ac1' class="w3-container w3-white w3-hide">
+					<audio controls>
+						<source src="audios/saliva.wav" type="audio/wav">
+					</audio>				
+					<p>La saliva es una solución supersaturada en calcio y fosfato que contiene flúor, proteínas, enzimas, agentes <i>buffer</i>, inmunoglobulinas y glicoproteínas, entre otros elementos de gran importancia para evitar la formación de las caries. El flúor está presente en muy bajas concentraciones en la saliva, pero desempeña un importante papel en la remineralización, ya que al combinarse con los cristales del esmalte, forma el fluorapatita, que es mucho más resistente al ataque ácido.</p> 
+					<p>La saliva es esencial en el balance ácido-base de la placa. Las bacterias acidogénicas de la placa dental metabolizan rápidamente a los carbohidratos y obtienen ácido como producto final. El pH decrece rápidamente en los primeros minutos después de la ingestión de carbohidratos para incrementarse gradualmente; se plantea que en 30 minutos debe retornar a sus niveles normales.</p>
+					<p>Para que esto se produzca actúa el sistema <i>buffer</i> de la saliva, que incluye bicarbonato, fosfatos y proteínas. El pH salival depende de las concentraciones de bicarbonato; el incremento en la concentración de bicarbonato resulta un incremento del pH. Niveles muy bajos del flujo salival hacen que el pH disminuya por debajo de 5-3, sin embargo, aumenta a 7-8 si se acrecienta gradualmente el flujo salival.</p>
+					<p>Es conocido también que las macromoléculas salivales están comprometidas con la funciones de formación de la película salival. Al estudiar las funciones de las proteínas salivales ricas en prolina, se ha demostrado que estas interaccionan con la superficie del diente, y forman parte de una capa de proteínas que se deposita sobre el mismo, denominada <i>película adquirida</i>. Esta está involucrada en procesos importantes como la protección de la superficie dentaria, su remineralización y la colonización bacteriana, entre otras. En la saliva además de proteínas, se han aislado péptidos con actividad antimicrobiana, como por ejemplo, las beta defensinas. Se considera que además de la defensa de la superficie de la cavidad bucal, pudieran inhibir la formación de la placa dental bacteriana y, por lo tanto, el desarrollo de la caries dental.
+					</p>
+				</div>
+			</div>
+			<div class="w3-card-4 w3-margin-top">
+				<header class="w3-container" style="background-color:#6969aa" onclick="openAccordion('ac2')"><h2 class="w3-text-white">¿Cómo los bajos valores de pH provocan la desmineralización del esmalte y la dentina?</h2></header>
+				<div id='ac2' class="w3-container w3-white w3-hide">
+					<p>Todos los tejidos contienen minerales, tejidos blandos y duros, cuya diferencia está en cantidad y clase de minerales, y disposición espacial.</p> 
+					<p>En los tejidos duros como el esmalte la mineralización es mayor de 98%. Forma modelos cristalinos que se caracterizan en apatita. Hidroxiapatita: [Ca+2]10[PO4-3 ]6 [OH-]2. Las altas concentraciones de iones H+ provocan la solubilización de la hidroxiapatita y la desmineralización.</p>
+					<p>La formación y disolución de cada sólido cristalino depende del equilibrio de dos fuerzas. En el caso de la hidroxiapatita, tal equilibrio es función de la concentración de iones, Calcio, Fosfato e Hidroxilo en el líquido circulante. La actividad iónica en equilibrio (cuando no se reforma ni se redisuelve hidroxiapatita) es una constante resultado de las concentraciones de calcio, fosfato y OH que se representa en el
+					Kps (producto de solubilidad).</p>
+					<p>En la condición de neutralidad, las especies iónicas predominantes en la solución son los fosfatos primarios y secundarios. La forma terciaria sólo existe en cantidades muy reducidas. El hecho de que los cristales del hueso y el diente se compongan de fosfatos terciarios (HPO4-3) indica una gran afinidad del calcio por ese ión.  A medida que consume el fosfato terciario en la formación de Hidroxiapatita, los niveles se recuperan por disociación del fosfato secundario. En soluciones de bajo pH casi todos los fosfatos se encuentran en la forma de ácido fosfórico debido a la alta concentración de protones.Por tanto, en condiciones de bajos valores de pH, las concentraciones del fosfato secundario en la solución son muy bajas. El bajo pH causa disolución de la hidroxiapatita.
+					</p>
+				</div>
+			</div>
+			<div class="w3-card-4 w3-margin-top">
+				<header class="w3-container" style="background-color:#6969aa" onclick="openAccordion('ac3')"><h2 class="w3-text-white">Sustrato cariogénico</h2></header>
+				<div id='ac3' class="w3-container w3-white w3-hide">
+					<audio controls>
+						<source src="audios/sustratocariogenico.wav" type="audio/wav">
+					</audio>
+					<p>Dentro de los factores que favorecen el desarrollo de la caries dental, uno de los más estudiados es el consumo excesivo de azúcares simples. Numerosos estudios han demostrado la asociación entre caries y carbohidratos refinos o azúcares, especialmente, la sacarosa o azúcar común. Los azúcares consumidos con la dieta constituyen el sustrato de la microflora bucal y dan inicio al proceso de cariogénesis.</p>
+					<p>La sacarosa, formada por dos monosacáridos simples: la fructosa y la glucosa; se considera el más cariogénico, no sólo porque su metabolismo produce ácidos, sino porque el <i>Estreptococo mutans</i> lo utiliza para producir glucano, polisacárido extracelular, que le permite a la bacteria adherirse firmemente al diente, inhibiendo las propiedades de difusión de la placa. 
+					</p>
+				</div>
+			</div>	
+			<div class="w3-row" style="margin-top">
+				<div class="w3-col w3-half w3-center w3-panel">
+					<img src="img/bioquimica1.png" style="width:100%;" alt="Tomado de: Fundamentos de ciencias básicas aplicadas a la odontología. Pontificia Universidad Javeriana, 2006 " class="hover-shadow w3-round-xlarge myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				</div>
+				<div class="w3-col w3-half w3-center w3-panel">
+					<img src="img/bioquimica2.png" style="width:100%;" alt="Tomado de: Fundamentos de ciencias básicas aplicadas a la odontología. Pontificia Universidad Javeriana, 2006" class="hover-shadow w3-round-xlarge myImg" onclick="document.getElementById('myModal').style.display ='block';document.getElementById('imgModal').src = this.src;document.getElementById('caption').innerHTML = this.alt;">
+				</div>				
+			</div>
+
+			<!------------------------------------------------------------------->
+        </div>
+    </div>
+	
+	<!-- Modal image window ---->
+	<div id="myModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+		<span class="close w3-hover-color4" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img id="imgModal" class="modal-content" style="width:80%">
+		<div id="caption" class="w3-black w3-text-white w3-small" style="width:80%;height:auto"></div>
+	</div>	
+	
+    <script>
+        $(document).ready(function() {
+            $('#mySidebar').load("html/nav.html");
+            $('#mbar').load("html/mbar.html");
+        });
+    </script>
+</body>
+
+</html>
