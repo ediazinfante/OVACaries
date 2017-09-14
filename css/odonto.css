@@ -26,7 +26,7 @@
 			font-family: 'Josefin Sans', sans-serif;
         }
 
-		ol,li,ul { font-family: 'Josefin Sans', sans-serif;
+		ol,li,ul,dl,dt,dd{ font-family: 'Josefin Sans', sans-serif;
 			font-size:18px;
 		}
 		
